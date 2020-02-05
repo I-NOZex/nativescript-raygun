@@ -1,23 +1,54 @@
 {
-  "name": "nativescript-raygun",
-  "version": "1.0.0",
-  "description": "A NativeScript plugin for Raygun error reporting.",
-  "repository": {
+  "_from": "github:I-NOZex/nativescript-raygun",
+  "_id": "nativescript-raygun@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/nativescript-raygun",
+  "_phantomChildren": {},
+  "_requested": {
     "type": "git",
-    "url": "https://github.com/pocketsmith/nativescript-raygun.git"
+    "raw": "I-NOZex/nativescript-raygun",
+    "rawSpec": "I-NOZex/nativescript-raygun",
+    "saveSpec": "github:I-NOZex/nativescript-raygun",
+    "fetchSpec": null,
+    "gitCommittish": null
   },
-  "main": "raygun.js",
-  "author": "PocketSmith",
-  "nativescript": {},
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/pocketsmith/nativescript-raygun/blob/master/LICENSE"
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "github:I-NOZex/nativescript-raygun#f9c25fe7bac6c278c0f944ab69231658a223e664",
+  "_spec": "I-NOZex/nativescript-raygun",
+  "_where": "C:\\Users\\tiago\\Documents\\Projects\\WLB\\nativescript\\howdy-app",
+  "author": {
+    "name": "PocketSmith"
   },
   "bugs": {
     "url": "https://github.com/pocketsmith/nativescript-raygun/issues"
   },
-  "homepage": "https://github.com/pocketsmith/nativescript-raygun",
+  "bundleDependencies": false,
   "dependencies": {
     "lodash": "^3.0.0"
-  }
+  },
+  "nativescript": {
+    "platforms": {
+      "android": "2.3.0",
+      "ios": "2.3.0"
+    }
+  },
+  "deprecated": false,
+  "description": "A NativeScript plugin for Raygun error reporting.",
+  "homepage": "https://github.com/pocketsmith/nativescript-raygun",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/pocketsmith/nativescript-raygun/blob/master/LICENSE"
+  },
+  "main": "raygun.js",
+  "name": "nativescript-raygun",
+  "nativescript": {"useV8symbols": true },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pocketsmith/nativescript-raygun.git"
+  },
+  "version": "1.0.0"
 }

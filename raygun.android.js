@@ -2,13 +2,13 @@ var _ = require("lodash");
 var utils = require("utils/utils");
 
 var raygun = {}
-
-var RaygunClient = main.java.com.mindscapehq.android.raygun4android.RaygunClient;
-var RaygunUserInfo = main.java.com.mindscapehq.android.raygun4android.messages.RaygunUserInfo;
+ 
+var RaygunClient = com.raygun.raygun4android.RaygunClient;
+var RaygunUserInfo = com.raygun.raygun4android.messages.shared.RaygunUserInfo;
 
 raygun.start = function(key) {
-  RaygunClient.Init(utils.ad.getApplicationContext(), key);
-  RaygunClient.AttachExceptionHandler();
+  RaygunClient.init(utils.ad.getApplicationContext(), key);
+  RaygunClient.enableCrashReporting(true); // param => bool attachDefaultHandler
 };
 
 raygun.identify = function(val) {
@@ -18,7 +18,7 @@ raygun.identify = function(val) {
     user.FullName = val.fullName;
     user.FirstName = val.firstName;
     user.IsAnonymous = val.isAnonymous ? true : false;
-    RaygunClient.SetUser(user);
+    RaygunClient.setUser(user);
   } else {
     throw new Error("Parameter needs to be an object of user details, see the docs");
   }
